@@ -13,6 +13,7 @@
     "start": "node apps/api/dist/server.js"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "typescript": "^5.7.3"
   }
 }
