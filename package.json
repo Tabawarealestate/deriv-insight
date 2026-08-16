@@ -13,8 +13,17 @@
     "start": "node apps/api/dist/server.js"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.21.0",
     "concurrently": "^9.2.1",
     "typescript": "^5.7.3",
     "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0"
   }
 }
