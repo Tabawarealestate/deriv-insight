@@ -1,0 +1,18 @@
+{
+  "name": "deriv-insight-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/api\" \"npm run dev -w apps/web\"",
+    "build": "npm run build -w packages/shared && npm run build -w packages/analytics && npm run build -w apps/web && npm run build -w apps/api",
+    "test": "npm run test -w packages/analytics",
+    "typecheck": "npm run typecheck -ws",
+    "start": "node apps/api/dist/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

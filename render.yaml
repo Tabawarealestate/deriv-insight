@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: deriv-insight
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: MAX_TICKS_IN_MEMORY
+        value: "5000"
+      - key: DERIV_WS_URL
+        value: "wss://api.derivws.com/trading/v1/options/ws/public"

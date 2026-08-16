@@ -1,0 +1,9 @@
+{
+  "name": "Deriv Insight",
+  "short_name": "Deriv Insight",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "description": "Statistical market insight dashboard"
+}

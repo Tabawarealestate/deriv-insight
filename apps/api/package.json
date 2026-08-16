@@ -1,0 +1,6 @@
+{
+  "name":"@deriv-insight/api","version":"1.0.0","type":"module",
+  "scripts":{"dev":"tsx watch src/server.ts","build":"tsc -p tsconfig.json","typecheck":"tsc -p tsconfig.json --noEmit"},
+  "dependencies":{"@deriv-insight/analytics":"1.0.0","@deriv-insight/shared":"1.0.0","cors":"^2.8.5","dotenv":"^17.2.1","express":"^5.1.0","ws":"^8.18.3"},
+  "devDependencies":{"@types/cors":"^2.8.19","@types/express":"^5.0.3","@types/node":"^24.3.0","@types/ws":"^8.18.1","tsx":"^4.20.3","typescript":"^5.8.3"}
+}
